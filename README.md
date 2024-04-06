@@ -1,3 +1,5 @@
+# REG-NO: 212223230071
+# NAME: HARISH S
 # DISTANCE-BETWEEN-TWO-POINTS
 
 ## AIM:
@@ -17,18 +19,23 @@ using the print function, display the distance between the two points.
 End the program.
 ### PROGRAM:
 ```
-Program to find distance between two points.
-Developed by : KAVINRAJA D
-Reference no : 22007928
-import math 
-l1 = [4,2]
-l2 = [10,6]
-d = math.sqrt(((l2[0]-l1[0])**2)+((l2[1]-l1[1])**2))
-print("{:.2f}".format(d))
+import math
+def calculate_distance(point1, point2):
+    x1, y1 = point1
+    x2, y2 = point2
+    distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+    return distance
+point1 = [4, 2]
+point2 = [10, 6]
+distance = calculate_distance(point1, point2)
+print("{:.2f}".format(distance))
+
 ```
   
 ### OUTPUT:
 ![OUTPUT](./images/Distance.png)
+![image](https://github.com/d-kavinraja/DISTANCE-BETWEEN-TWO-POINTS/assets/166011385/f9f8fc5b-3a98-438b-9898-7cf90f26e88d)
+![image](https://github.com/d-kavinraja/DISTANCE-BETWEEN-TWO-POINTS/assets/166011385/cb2ac53a-6d0b-4785-a560-a92d3d71ad25)
 
 ### RESULT:
 Thus the distance of the two points is sucessfully executed and displayed.
